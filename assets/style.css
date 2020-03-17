@@ -4,13 +4,10 @@ h1 {
 }
 .card{
     width: 100%;
-    margin: 15px 15px;
-}
-
-.hide {
+    margin: 5px 20px 15px 15px;
     display: none;
 }
 
-.show {
-    display: block;
-}
+#fiveDayForecast {
+    display: none;
+ }
