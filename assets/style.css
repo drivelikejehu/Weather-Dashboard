@@ -2,9 +2,9 @@ h1 {
     text-align: center;
     color: white;
 }
-.card-body{
+.card{
     width: 100%;
-    padding: 20px;
+    margin: 15px 15px;
 }
 
 .hide {
