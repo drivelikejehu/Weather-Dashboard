@@ -28,7 +28,7 @@ $(document).ready(function(){
         method: "GET"
       }).then(function(response) {
 
-        console.log(response);
+        console.log(response.weather[0].icon);
 
         function tempConversion() {
           var temp = (response.main.temp - 273.15) * 1.80 + 32;
@@ -36,8 +36,13 @@ $(document).ready(function(){
           return tempFarhenheit;
         }
 
+        // http://openweathermap.org/img/wn/10d@2x.png
+        var img = $("<img>");
+        img.attr("src", "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png");
+        $(".card").append(img);
+
+
         $(".card-city").html("<h3>" + response.name + " " + date + "</h3>");
-        // $(".card-city").text(date.toLocaleDateString('en-US'));
         $(".card-temp").text("Temperature: " + tempConversion() + " °F")
         $(".card-humid").text("Humidity: " + response.main.humidity);
         $(".card-wind").text("Wind Speed: " + response.wind.speed + " MPH");
