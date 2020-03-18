@@ -1,3 +1,11 @@
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 h1 {
     text-align: center;
     color: white;
@@ -5,9 +13,9 @@ h1 {
 .card{
     width: 100%;
     margin: 5px 20px 15px 15px;
-    display: none;
+    /* visibility: hidden; */
 }
 
-#fiveDayForecast {
-    display: none;
- }
+/* #fiveDayForecast {
+    visibility: hidden;
+ } */
