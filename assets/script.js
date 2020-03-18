@@ -24,10 +24,7 @@ $(document).ready(function(){
           var temp = (response.main.temp - 273.15) * 1.80 + 32;
           var tempFarhenheit = Math.floor(temp);
           return tempFarhenheit;
-
         }
-        // (results[i].main.temp - 273.15) * 1.80 + 32;
-        //   let tempF = Math.floor(temp);
   
 
         $(".card-city").html("<h3>" + response.name + "</h3>");
@@ -39,10 +36,6 @@ $(document).ready(function(){
 
       
       // cityButtons();
-      // <h5 class="card-city"></h5>
-      // <div class="card-temp">Temperature: </div>
-      // <div class="card-humid">Humidity: </div>
-      // <div class="card-wind">Wind Speed: </div>
       // <div class="card-uv">UV Index: </div>
 
     });
